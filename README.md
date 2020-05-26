@@ -15,3 +15,9 @@ Simple example of using sapper with auth0 as the authentication service.
 ```
 
 4. `npm run dev`
+
+## Authentication Flow
+1. Navigate to `/app` to be redirected to login prompt
+2. Login/Signup
+3. Redirect back to `/app`
+4. To logout: navigate to `/auth/logout`
