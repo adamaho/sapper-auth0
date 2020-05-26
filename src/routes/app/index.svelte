@@ -1,1 +1,1 @@
-<h1>APPPPPP</h1>
+<h1>Entry point to main application. Hidden behind Auth</h1>

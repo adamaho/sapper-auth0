@@ -39,7 +39,9 @@ router.get('/callback', function (req, res, next) {
 // Perform session logout and redirect to homepage
 router.get('/logout', (req, res) => {
   req.logout();
-  res.redirect("https://dev-7bta6vwu.auth0.com/v2/logout?client_id=p0aDg38DESUStKi2UhrruLoluGr4hHPr");
+
+  const { AUTH0_DOMAIN, AUTH0_CLIENT_ID } = process.env;
+  res.redirect(`https://${AUTH0_DOMAIN}/v2/logout?client_id=${AUTH0_CLIENT_ID}`);
 });
 
 export default router;
